@@ -1,0 +1,51 @@
+原文地址: http://www.xuanfengge.com/github-cheats.html
+1、在任意diff页面的url后面加上?w=1，可以去掉那些只是空白字符的变化。
+
+2、在diff或者file页面的url后面加上?ts=4，这样当显示tab字符的长度时就是4个空格的长度，不再是默认的8个空格。可以根据自己的偏好进行修改。（注：在Gists页面和raw file页面不起作用）
+
+3、查看某个用户的commit历史的时候，只需要在commits页面url后面加上?author=username
+
+4、当我们克隆某一资源时，可以不要那个.git后缀。
+
+5、如果某个提交修复了一个issue，当提交到master分支时，提交信息里可以使用fix/fixed/fixed，close/closes/closed或者resolve/resolves/resolveed等关键词，后面再跟上issue号，这样就会关闭这个issue。
+
+6、表情符：
+	可以再pull requests，issues，提交信息，Markdown文件里加入表情符。使用方法
+	:smile:
+	将输出一个笑脸。
+	Github支持的完整表情符号列表详见emoji-cheat-sheet.com 或 scotch-io/All-Github-Emoji-Icons。
+	Github上使用最多的5个表情符号是：
+	(1):shipit:
+	(2):sparkles:
+	(3):-1:
+	(4):+1:)
+	(5):clap:
+
+7、静态与动态图片：
+	注释和README等文件里也可以使用图片和GIF动画：
+	![Alt Text](http://www.sheawong.com/***/***.gif)
+	仓库中得原始图片可以被直接调用：
+	![Alt Text](http://github.com(user)/(repo)/**/**.gif)
+
+8、快速引用
+	在注释话题里引用之前某个人所说的，只需要选中文本，然后按r键，想要的就会以引用的形式复制到你的输入框里。
+
+9、issue和pull requests里可以添加复选框
+	[ ] 后面跟上文字，显示不勾选状态
+	[x] 后面跟上文字，显示勾选状态
+
+10、尽管reflog是一种检查丢失提交的方法，但是它在大型仓库中行不通，这时就该fsck（file system check）出场了。
+	git fsck --lost-found
+
+11、git自动补全命令
+	cd ~
+	curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+	然后，在您的~/.bash_profile文件中添加以下代码：
+	if[] -f ~/.git-completion.bash ];then
+		. ~/.git-completion.bash
+	fi
+
+
+
+
+

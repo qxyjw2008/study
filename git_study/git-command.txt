@@ -1,0 +1,19 @@
+git status -s	紧凑的格式输出
+
+git commit -a -m “message”	Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤
+
+git log
+-p，用来显示每次提交的内容差异。 你也可以加上 -2 来仅显示最近两次提交
+如果你想看到每次提交的简略的统计信息，你可以使用 --stat
+另外一个常用的选项是 --pretty。 这个选项可以指定使用不同于默认格式的方式展示提交历史。 这个选项有一些内建的子选项供你使用。 比如用 oneline 将每个提交放在一行显示，查看的提交数很大时非常有用。 另外还有 short，full 和 fuller 可以用，展示的信息或多或少有些不同
+—-graph	图形显示
+
+git config --global alias.logformat 'log --pretty=format:"%h - %an, %ar : %s"'	设置日志输出格式
+
+git remote -v 会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL
+	add <shortname> <url>	添加远程仓库
+	rename pb paul 重命名
+
+git push [remote-name] [branch-name]
+
+git fetch [remote-name]
