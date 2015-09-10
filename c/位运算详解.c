@@ -9,14 +9,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void reverseNum() {
-    int a = 3;
-    bool y;
-    
-    y = a & 1;
-    printf("%d\n", y);
-}
-
 /**
  *  check the num is even or odd
  *  基数&1==1 偶数&1==0
