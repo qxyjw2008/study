@@ -39,3 +39,18 @@
 			为什么可以这么算：因为两个相同数异或得到的结果是0，而0与任何数的异或值都不变。所以可以利用a^b^b=a，a^b^a=b这个原则把a作为临时值，进行乾坤大挪移。
 		 (4)、a^b作为半加器的和位，a&b作为半加器的进位，利用(a&b)<<1 + (a^b)得到a+b的值。
 			所以a和b的平均值，可以用(a&b) + (a^b)>>1得到
+
+7、memset、strcpy、memcpy
+	strcpy:原型 extern char *strcpy(char *dest,char *src)
+		   用法 #include
+		   功能 把src所指由NULL结束的字符串复制到dest所指的数组中
+		   说明 src和dest所指内存区域不可以重叠dest必须有足够的空间来容纳src的字符串。返回指向dest的指针。
+	memcpy:原型 extern void *memcpy(void *dest, void *src, unsigned int count)
+		   用法 #include
+		   功能 由src所指内存区域复制count个字节到dest所指内存区域
+		   说明 src和dest所指内存区域不能重叠，函数返回指向dest的指针。
+	memset
+		   原型 extern void *memset(void *buffer, int c, int count)
+		   用法 #include
+		   功能 把buffer所指内存区域的前count个字节设置成字符c
+		   说明 返回指向buffer的指针
