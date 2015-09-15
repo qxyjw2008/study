@@ -1,0 +1,43 @@
+1、有员工表empinfo
+(
+ Fempno varchar2(10) not null pk,
+ Fempname varchar2(20) not null,
+ Fage number not null,
+ Fsalary number not null
+);
+加入数据量很大约1000万条，写一个你认为最高效的SQL语句，用一个SQL计算以下四种人
+fsalary>9999 and fage>35
+fsalary>9999 and fage<35
+fsalary<9999 and fage>35
+fsalary<9999 and fage<35
+
+解答：
+select
+	sum(
+		if((fsalary>9999 and face>35),1,0)
+		),
+	sum(
+			if((fsalary>9999 and face<35),1,0)
+		),
+	sum(
+			if((fsalary<9999 and face>35),1,0)
+		),
+	sum(
+			if((fsalary<9999 and face<35),1,0)
+		)
+	from empinfo
+
+2、比如小明去网吧冲会员 第一次冲了50元，第二次又冲了50元，发现冲多了要求服务员退出30元，我要统计他实际充值了多少钱？
+	name	money	stype
+	小明	50		0
+	小明	50		0
+	小明	39		4
+---------------结果---------------
+	name	money
+	小明	70
+
+Sql语句：
+	case：
+		select name,sum(case when stype=4 then money*(-1) else money end) as money from table group by name;
+	if:
+		select name,sum(money*if(stype=4,-1,1)) as money from table group by name;
