@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8BD38F3-D314-458B-B554-AE58DF1D419B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheSwiftProframmingLanguage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>68F40DC8C30DC97FF3AB5220DFBD33891052EA78</key>
+		<string>https://github.com/benjaminwhx/git.git</string>
+		<key>A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A</key>
+		<string>https://github.com/benjaminwhx/study.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/TheSwiftProframmingLanguage/TheSwiftProframmingLanguage.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>68F40DC8C30DC97FF3AB5220DFBD33891052EA78</key>
+		<string>../../../../..</string>
+		<key>A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/benjaminwhx/study.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68F40DC8C30DC97FF3AB5220DFBD33891052EA78</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>study</string>
+		</dict>
+	</array>
+</dict>
+</plist>
