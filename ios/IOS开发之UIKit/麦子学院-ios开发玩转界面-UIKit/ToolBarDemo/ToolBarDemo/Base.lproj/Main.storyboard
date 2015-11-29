@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToolBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-2Y-qX1">
+                                <rect key="frame" x="20" y="40" width="560" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bCv-EF-FC5"/>
+                                    <barButtonItem title="Item" systemItem="add" id="jFh-qT-cCX"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="m86-GH-Vp8"/>
+                                    <barButtonItem systemItem="edit" id="96u-1Z-PqL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kKJ-hL-96k"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L8A-2Y-qX1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ZyG-9o-Jge"/>
+                            <constraint firstItem="L8A-2Y-qX1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="byS-yC-0hi"/>
+                            <constraint firstItem="L8A-2Y-qX1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hg9-Dh-mqX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L8A-2Y-qX1" secondAttribute="trailing" id="shK-Nk-FVN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBarButton1" destination="jFh-qT-cCX" id="LA3-iB-kFF"/>
+                        <outlet property="toolBar1" destination="L8A-2Y-qX1" id="XNf-qi-CgB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -16,38 +16,38 @@ class Tour {
     */
     func simpleValue() {
         //let声明常量，var声明变量
-        var myVariable = 20
-        myVariable = 50
-        let myConstant = 42
-        //明确指定类型在:后面指定类型
-        let implicitInteger = 70
-        let implicitDouble = 70.0   //implicit隐式
-        let explicitDouble: Double = 70 //explicit显式
-        //需要把一个值转换成其它类型，显示转换
-        let label = "The width is"
-        let width = 94
-        let widthLabel = label + String(width)
-        //更简单地方式转换字符串
-        let apples = 3
-        let oranges = 5
-        let appleSummary = "I have \(apples) apples."    //summary摘要
-        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+//        var myVariable = 20
+//        myVariable = 50
+//        let myConstant = 42
+//        //明确指定类型在:后面指定类型
+//        let implicitInteger = 70
+//        let implicitDouble = 70.0   //implicit隐式
+//        let explicitDouble: Double = 70 //explicit显式
+//        //需要把一个值转换成其它类型，显示转换
+//        let label = "The width is"
+//        let width = 94
+//        let widthLabel = label + String(width)
+//        //更简单地方式转换字符串
+//        let apples = 3
+//        let oranges = 5
+//        let appleSummary = "I have \(apples) apples."    //summary摘要
+//        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
         //[]创建数组和字典，并使用下标或者key来访问元素
         var shoppingList = ["catfish", 123, "tulips", "blue paint"]
         shoppingList[1] = "bottle of water"
         //[catfish, bottle of water, tulips, blue paint]
-        println(shoppingList)
+        print(shoppingList)
         var occupations = [
             "Malcolm": "Captain",
             "Kaylee": "Mechanic"
         ]
         occupations["Jayne"] = "Public Releations"
         //[Kaylee: Mechanic, Jayne: Public Releations, Malcolm: Captain]
-        println(occupations)
-        println(occupations["Malcolm"]!)
+        print(occupations)
+        print(occupations["Malcolm"]!)
         //创建一个空数组或字典
-        let emptyArray = [String]()
-        let emptyDictionary = [String: Float]()
+//        let emptyArray = [String]()
+//        let emptyDictionary = [String: Float]()
         //如果类型可以推断出来，我们可以使用[]和[:]来创建空数组和字典
         shoppingList = []
         occupations = [:]
@@ -68,29 +68,29 @@ class Tour {
                 teamScore += 1
             }
         }
-        println(teamScore)
+        print(teamScore)
         //一个可选的值是一个具体的值或者是nil以表示值缺失
-        var optionalString: String? = "Hello"
-        println(optionalString == nil)
+        let optionalString: String? = "Hello"
+        print(optionalString == nil)
         
-        var optionalName: String? = nil
+        let optionalName: String? = nil
         var greeting = "Hello!"
         if let name = optionalName {
             greeting = "Hello, \(name)"
         }
-        println(greeting)
+        print(greeting)
         
         //switch支持任意类型的数据以及各种比较操作
         let vegetable = "red pepper"    //vegetable蔬菜 pepper辣椒
         switch vegetable {
             case "celery":
-                println("Add some raisins and make ants on a log.")
+                print("Add some raisins and make ants on a log.")
             case "cucumber", "watercress":
-                println("That would make a good tea sandwich.")
+                print("That would make a good tea sandwich.")
             case let x where x.hasSuffix("pepper"):
-                println("Is it a spicy \(x)?")
+                print("Is it a spicy \(x)?")
             default:
-                println("Everything tastes good in soup.")
+                print("Everything tastes good in soup.")
         }
         // for-in
         let interestingNumbers = [
@@ -108,27 +108,27 @@ class Tour {
                 }
             }
         }
-        println("\(largest)," + largestType)
+        print("\(largest)," + largestType)
         
         //while
         var n = 2
         while n < 100 {
             n = n * 2
         }
-        println(n)
+        print(n)
         
         var m = 2
-        do {
+        repeat {
             m = m * 2
         } while m < 100
-        println(m)
+        print(m)
         
         //使用..< 来表示范围(不包含上界)，需要包含使用...
         var firstForLoop = 0
         for i in 0..<4 {    //等价于for var i = 0;i < 4; ++i
             firstForLoop += i
         }
-        println(firstForLoop)
+        print(firstForLoop)
     }
 }
 

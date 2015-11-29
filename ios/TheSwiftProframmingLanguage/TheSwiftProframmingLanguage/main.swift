@@ -66,9 +66,67 @@ let fc = functionsAndClosure();
 
 /***************************************************************/
 //protocol and extend
-var a = SimpleClass()
-a.adjust()
-let aDescription = a.simpleDescription
-println(aDescription)
-var mainTest = MainTest()
-mainTest.test1()
+//var a = SimpleClass()
+//a.adjust()
+//let aDescription = a.simpleDescription
+//println(aDescription)
+//var mainTest = MainTest()
+//mainTest.test1()
+
+/***************************************************************/
+// The Basic
+//let basic = Basic()
+//basic.test1()
+//basic.test2()
+//basic.basicOperators()
+//basic.stringsAndCharacters()
+
+/***************************************************************/
+// The CollectionTypes
+//let collectionTypes = CollectionTypes()
+//collectionTypes.createArray()
+//collectionTypes.createSet()
+//collectionTypes.createDictionary()
+
+/***************************************************************/
+// The ControlFlow
+//let controlFlow = ControFlow()
+//controlFlow.createFor()
+//controlFlow.createWhile()
+//controlFlow.createSwitch()
+//controlFlow.createTuple()
+
+/***************************************************************/
+// The Functions
+//let functions = Functions()
+//functions.test()
+
+/***************************************************************/
+// The Closure
+//let closure = Closure()
+//closure.test()
+
+/***************************************************************/
+// The Properties
+//let properties = CreateProperties()
+//properties.createProperties()
+
+/***************************************************************/
+// The Methods
+//let methods = CreateMethods()
+//methods.createMethods()
+
+/***************************************************************/
+// The SubScripts
+//let subScripts = CreateSubScripts()
+//subScripts.createSubScripts()
+
+/***************************************************************/
+// The Inheritance
+//let inheritance = CreateInheritance()
+//inheritance.createInheritance()
+
+/***************************************************************/
+// The Initialization
+//let initialization = CreateInitialization()
+//initialization.createInitialization()

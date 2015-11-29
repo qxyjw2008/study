@@ -1,0 +1,1 @@
+1.通过添加Header的方式新建的头文件SQLite3Demo-Bridging-Header.h要在在TARGETS->BuildingSettings->Objective-C Bridging Header->双击此项右边文本框 ->把左边的Header文件拖进去才可以。

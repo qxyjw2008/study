@@ -1,0 +1,4 @@
+Recognizer相应事件步骤
+1、建立和设置手势识别器实例，设置target，action，指定一些属性
+2、附加识别器到视图
+3、实现action方法

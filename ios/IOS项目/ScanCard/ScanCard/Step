@@ -1,0 +1,5 @@
+1、导入CardIO包
+2、设置target-Build Settings-Linking-Other Linker Flags: -lc++
+    General-Linked Frameworks and libraries
+        AVFoundation AudioToolbox
+        CoreMedia MobileCoreServices

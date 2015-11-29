@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ChatListViewController.viewDidLoad() -&gt; ():ChatListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "RCIMClient.sharedRCIMClient().currentUserInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RegiTableViewController.hideKeyBoard() -&gt; ():RegiTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.subviews">
+            </PersistentString>
+            <PersistentString
+               value = "self.labelUsername.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

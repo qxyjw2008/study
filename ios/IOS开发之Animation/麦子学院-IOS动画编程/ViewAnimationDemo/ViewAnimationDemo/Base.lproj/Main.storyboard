@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bf6-SD-z1a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ufq-ie-NkR">
+                                <rect key="frame" x="53" y="103" width="246" height="72"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95686763743455494" green="0.89068353579771586" blue="0.062981012398394431" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj4-qo-muc">
+                                <rect key="frame" x="53" y="28" width="107" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="startBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAd-mX-xW0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCU-Q8-TUK">
+                                <rect key="frame" x="197" y="28" width="129" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Fallback Animation"/>
+                                <connections>
+                                    <action selector="fallbackBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9J7-lW-F1e"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pkz-kS-NT2">
+                                <rect key="frame" x="53" y="216" width="246" height="72"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.47656008623769791" green="0.95686763743455494" blue="0.28103108879254651" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="blankView1" destination="ufq-ie-NkR" id="5gw-mL-EnX"/>
+                        <outlet property="blankView2" destination="Pkz-kS-NT2" id="1H7-Ld-wZP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="357"/>
+        </scene>
+        <!--Animate View Controller-->
+        <scene sceneID="sn2-mh-hVW">
+            <objects>
+                <viewController id="Bf6-SD-z1a" customClass="CAAnimateViewController" customModule="ViewAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YKU-op-WWH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y7a-uo-ZhL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="acI-5Q-YLu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYy-oK-KJU">
+                                <rect key="frame" x="284" y="550" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopBtnClicked:" destination="Bf6-SD-z1a" eventType="touchUpInside" id="RpV-WG-tJ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qV-E4-q2i">
+                                <rect key="frame" x="324" y="550" width="57" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Fallback"/>
+                                <connections>
+                                    <action selector="fallbackBtnClicked:" destination="Bf6-SD-z1a" eventType="touchUpInside" id="TnZ-T8-wc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixk-ka-or0">
+                                <rect key="frame" x="234" y="550" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startBtnClicked:" destination="Bf6-SD-z1a" eventType="touchUpInside" id="agU-70-hn1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HYy-oK-KJU" firstAttribute="centerX" secondItem="acI-5Q-YLu" secondAttribute="centerX" id="21w-eR-msC"/>
+                            <constraint firstItem="Y7a-uo-ZhL" firstAttribute="top" secondItem="6qV-E4-q2i" secondAttribute="bottom" constant="20" id="6d3-gV-pHr"/>
+                            <constraint firstItem="HYy-oK-KJU" firstAttribute="leading" secondItem="ixk-ka-or0" secondAttribute="trailing" constant="16" id="Gbj-D9-nUh"/>
+                            <constraint firstItem="6qV-E4-q2i" firstAttribute="leading" secondItem="HYy-oK-KJU" secondAttribute="trailing" constant="8" id="T1S-A4-PxM"/>
+                            <constraint firstItem="Y7a-uo-ZhL" firstAttribute="top" secondItem="ixk-ka-or0" secondAttribute="bottom" constant="20" id="ewS-Ot-Lpd"/>
+                            <constraint firstItem="Y7a-uo-ZhL" firstAttribute="top" secondItem="HYy-oK-KJU" secondAttribute="bottom" constant="20" id="ryD-JQ-HF8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stb-3j-fJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="1058"/>
+        </scene>
+    </scenes>
+</document>

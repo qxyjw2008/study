@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCodeAndWeatherDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MU-ak-yIM">
+                                <rect key="frame" x="52" y="28" width="172" height="180"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="Nk3-9K-2yh"/>
+                                    <constraint firstAttribute="height" constant="187" id="gci-ZJ-ywb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nk3-9K-2yh"/>
+                                        <exclude reference="gci-ZJ-ywb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Nk3-9K-2yh"/>
+                                        <include reference="gci-ZJ-ywb"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ea-99-xkn">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-jy-noS">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-7J-fgB">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZFH-QZ-eTc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZFH-QZ-eTc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ZFH-QZ-eTc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.47656008620000001" green="0.95686763740000003" blue="0.2810310888" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7MU-ak-yIM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9vf-1f-5as"/>
+                            <constraint firstItem="4Ea-99-xkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0e-XD-Rlm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tek-7J-fgB" secondAttribute="bottom" constant="225" id="Nc7-7N-wrX"/>
+                            <constraint firstItem="Tek-7J-fgB" firstAttribute="top" secondItem="hjj-jy-noS" secondAttribute="bottom" constant="27" id="SYQ-tu-T0a"/>
+                            <constraint firstItem="Tek-7J-fgB" firstAttribute="leading" secondItem="hjj-jy-noS" secondAttribute="leading" id="ZS2-8d-OOA"/>
+                            <constraint firstItem="hjj-jy-noS" firstAttribute="top" secondItem="4Ea-99-xkn" secondAttribute="bottom" constant="27" id="aPF-FD-pM7"/>
+                            <constraint firstItem="7MU-ak-yIM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bYA-tW-N2d"/>
+                            <constraint firstItem="Tek-7J-fgB" firstAttribute="leading" secondItem="4Ea-99-xkn" secondAttribute="leading" id="wh2-0o-OTQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Ea-99-xkn"/>
+                                <exclude reference="hjj-jy-noS"/>
+                                <exclude reference="Tek-7J-fgB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9vf-1f-5as"/>
+                                <exclude reference="bYA-tW-N2d"/>
+                                <exclude reference="J0e-XD-Rlm"/>
+                                <exclude reference="aPF-FD-pM7"/>
+                                <exclude reference="SYQ-tu-T0a"/>
+                                <exclude reference="ZS2-8d-OOA"/>
+                                <exclude reference="wh2-0o-OTQ"/>
+                                <exclude reference="Nc7-7N-wrX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Ea-99-xkn"/>
+                                <include reference="hjj-jy-noS"/>
+                                <include reference="Tek-7J-fgB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9vf-1f-5as"/>
+                                <include reference="bYA-tW-N2d"/>
+                                <include reference="J0e-XD-Rlm"/>
+                                <include reference="aPF-FD-pM7"/>
+                                <include reference="SYQ-tu-T0a"/>
+                                <include reference="ZS2-8d-OOA"/>
+                                <include reference="wh2-0o-OTQ"/>
+                                <include reference="Nc7-7N-wrX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelCity" destination="4Ea-99-xkn" id="LMY-vT-byf"/>
+                        <outlet property="labelTemp" destination="Tek-7J-fgB" id="KUV-Vd-pQ8"/>
+                        <outlet property="labelWeather" destination="hjj-jy-noS" id="SFe-X0-xGk"/>
+                        <outlet property="qrCodeImage" destination="7MU-ak-yIM" id="fg4-a1-VHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="359"/>
+        </scene>
+    </scenes>
+</document>

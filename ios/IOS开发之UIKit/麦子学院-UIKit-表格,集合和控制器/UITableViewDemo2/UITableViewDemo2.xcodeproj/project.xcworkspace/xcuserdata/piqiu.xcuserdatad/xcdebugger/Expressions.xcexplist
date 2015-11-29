@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cities[provinces[indexPath.section]]!">
+            </PersistentString>
+            <PersistentString
+               value = "cities[provinces[indexPath.section]]![indexPath.row]">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView, commitEditingStyle : UITableViewCellEditingStyle, forRowAtIndexPath : NSIndexPath) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "cities[province]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView, moveRowAtIndexPath : NSIndexPath, toIndexPath : NSIndexPath) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sourceIndexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "cities">
+            </PersistentString>
+            <PersistentString
+               value = "destinationIndexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "cities[newProvince]">
+            </PersistentString>
+            <PersistentString
+               value = "destinationIndexPath.section">
+            </PersistentString>
+            <PersistentString
+               value = "sourceIndexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

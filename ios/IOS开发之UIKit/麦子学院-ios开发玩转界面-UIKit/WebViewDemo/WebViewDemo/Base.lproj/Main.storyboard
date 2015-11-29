@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-tv-gni">
+                                <rect key="frame" x="11" y="11" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYl-VU-iQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqT-sR-fJ2">
+                                <rect key="frame" x="50" y="11" width="53" height="30"/>
+                                <animations/>
+                                <state key="normal" title="forward"/>
+                                <connections>
+                                    <action selector="forwardButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAj-8q-LZg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApZ-06-uwh">
+                                <rect key="frame" x="546" y="11" width="43" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="abI-tx-9lh"/>
+                                </constraints>
+                                <state key="normal" title="reload"/>
+                                <connections>
+                                    <action selector="reloadButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YL9-y7-37R"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VxR-v0-yRo">
+                                <rect key="frame" x="126" y="11" width="348" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEO-gN-GSC">
+                                <rect key="frame" x="482" y="11" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjf-98-7v6"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHa-fN-NPR">
+                                <rect key="frame" x="11" y="65" width="569" height="515"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="baseline" secondItem="Vwb-tv-gni" secondAttribute="baseline" id="0ES-kl-NDr"/>
+                            <constraint firstItem="Vwb-tv-gni" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="AK5-qr-BQS"/>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="baseline" secondItem="OEO-gN-GSC" secondAttribute="baseline" id="DoA-Ab-HED"/>
+                            <constraint firstItem="PHa-fN-NPR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="H4q-Pg-eR0"/>
+                            <constraint firstItem="XqT-sR-fJ2" firstAttribute="leading" secondItem="Vwb-tv-gni" secondAttribute="trailing" constant="5" id="Jvr-XR-fmj"/>
+                            <constraint firstItem="VxR-v0-yRo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LyZ-Jt-dwi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ApZ-06-uwh" secondAttribute="trailing" constant="-9" id="O61-Vn-6iY"/>
+                            <constraint firstItem="OEO-gN-GSC" firstAttribute="leading" secondItem="VxR-v0-yRo" secondAttribute="trailing" constant="8" id="R8h-xp-Nc3"/>
+                            <constraint firstItem="VxR-v0-yRo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-9" id="W0X-e3-bdm"/>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="top" secondItem="VxR-v0-yRo" secondAttribute="top" id="a2U-yg-2US"/>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="leading" secondItem="OEO-gN-GSC" secondAttribute="trailing" constant="16" id="czC-hF-AaF"/>
+                            <constraint firstItem="VxR-v0-yRo" firstAttribute="leading" secondItem="XqT-sR-fJ2" secondAttribute="trailing" constant="23" id="dIX-nS-zYG"/>
+                            <constraint firstItem="PHa-fN-NPR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="eQK-kN-6cq"/>
+                            <constraint firstAttribute="bottom" secondItem="PHa-fN-NPR" secondAttribute="bottom" constant="20" symbolic="YES" id="ggB-iC-QRx"/>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="baseline" secondItem="XqT-sR-fJ2" secondAttribute="baseline" id="uZs-Bj-H1h"/>
+                            <constraint firstItem="PHa-fN-NPR" firstAttribute="top" secondItem="VxR-v0-yRo" secondAttribute="bottom" constant="8" id="w5O-zS-Q7J"/>
+                            <constraint firstItem="ApZ-06-uwh" firstAttribute="leading" secondItem="OEO-gN-GSC" secondAttribute="trailing" constant="16" id="y3P-g9-gKD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PHa-fN-NPR" secondAttribute="trailing" id="zEe-71-lr1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="VxR-v0-yRo" id="gdW-uM-sMf"/>
+                        <outlet property="webView1" destination="PHa-fN-NPR" id="8MZ-f8-jaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="389"/>
+        </scene>
+    </scenes>
+</document>

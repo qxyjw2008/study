@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hnD-La-iw9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--微信-->
+        <scene sceneID="jPq-vx-YOE">
+            <objects>
+                <viewController id="3Fc-PX-Q83" customClass="ConversationListViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BVE-o7-bIH"/>
+                        <viewControllerLayoutGuide type="bottom" id="m1m-Mq-G8D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pgp-b2-Ln9">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="ENs-yA-l0F"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="微信" id="nam-vy-XOe">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="4fQ-qc-Eh7">
+                            <connections>
+                                <action selector="alertMenu:" destination="3Fc-PX-Q83" id="7Hd-X0-0SO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="pushConversationList" id="dGa-KX-LKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJk-3C-Vaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091" y="231"/>
+        </scene>
+        <!--与好友私聊中-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ConversationViewController" customModule="CloudIMTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="与好友私聊中" id="4gY-Ru-A3u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2807" y="231"/>
+        </scene>
+        <!--微信-->
+        <scene sceneID="lZp-ca-fCA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hnD-La-iw9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="微信" image="conversation" id="JHG-bW-Ixj"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="tcT-41-IWE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Fc-PX-Q83" kind="relationship" relationship="rootViewController" id="VLu-6z-Gj1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbF-XU-fQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="conversation" width="25" height="23"/>
+    </resources>
+</document>

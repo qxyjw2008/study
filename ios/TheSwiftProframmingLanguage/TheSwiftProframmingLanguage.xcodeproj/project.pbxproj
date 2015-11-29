@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9AD8F51BDBCBA300B1A59E /* learnswift09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8F41BDBCBA300B1A59E /* learnswift09.swift */; };
+		0B9AD8F71BDBD46D00B1A59E /* learnswift10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8F61BDBD46D00B1A59E /* learnswift10.swift */; };
+		0B9AD8F91BDBDDB700B1A59E /* learnswift11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8F81BDBDDB700B1A59E /* learnswift11.swift */; };
+		0B9AD8FB1BDBED4500B1A59E /* learnswift12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8FA1BDBED4500B1A59E /* learnswift12.swift */; };
+		0B9AD8FD1BDBF5AA00B1A59E /* learnswift13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8FC1BDBF5AA00B1A59E /* learnswift13.swift */; };
+		0B9AD8FF1BDBF8F000B1A59E /* learnswift14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD8FE1BDBF8F000B1A59E /* learnswift14.swift */; };
+		0B9AD9011BDC8A9A00B1A59E /* learnswift15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9AD9001BDC8A9A00B1A59E /* learnswift15.swift */; };
 		0B9E47081BD31ABE00F8A03F /* learnswift02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E47071BD31ABE00F8A03F /* learnswift02.swift */; };
 		0B9E470A1BD3C33500F8A03F /* learnswift03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E47091BD3C33500F8A03F /* learnswift03.swift */; };
+		0B9E470C1BD4903600F8A03F /* learnswift04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E470B1BD4903600F8A03F /* learnswift04.swift */; };
+		0B9E470E1BD506B900F8A03F /* learnswift05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E470D1BD506B900F8A03F /* learnswift05.swift */; };
+		0B9E47101BD5FBF900F8A03F /* learnswift06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E470F1BD5FBF900F8A03F /* learnswift06.swift */; };
+		0BA683DD1BD7627F001FD3ED /* learnswift07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA683DC1BD7627F001FD3ED /* learnswift07.swift */; };
+		0BA683E11BD78DF8001FD3ED /* learnswift08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA683E01BD78DF8001FD3ED /* learnswift08.swift */; };
 		0BAAA3191BD2354A00FB4933 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAAA3181BD2354A00FB4933 /* main.swift */; };
 		0BAAA3201BD2359C00FB4933 /* learnswift01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAAA31F1BD2359C00FB4933 /* learnswift01.swift */; };
 /* End PBXBuildFile section */
@@ -26,8 +38,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B9AD8F41BDBCBA300B1A59E /* learnswift09.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift09.swift; sourceTree = "<group>"; };
+		0B9AD8F61BDBD46D00B1A59E /* learnswift10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift10.swift; sourceTree = "<group>"; };
+		0B9AD8F81BDBDDB700B1A59E /* learnswift11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift11.swift; sourceTree = "<group>"; };
+		0B9AD8FA1BDBED4500B1A59E /* learnswift12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift12.swift; sourceTree = "<group>"; };
+		0B9AD8FC1BDBF5AA00B1A59E /* learnswift13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift13.swift; sourceTree = "<group>"; };
+		0B9AD8FE1BDBF8F000B1A59E /* learnswift14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift14.swift; sourceTree = "<group>"; };
+		0B9AD9001BDC8A9A00B1A59E /* learnswift15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift15.swift; sourceTree = "<group>"; };
 		0B9E47071BD31ABE00F8A03F /* learnswift02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift02.swift; sourceTree = "<group>"; };
 		0B9E47091BD3C33500F8A03F /* learnswift03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift03.swift; sourceTree = "<group>"; };
+		0B9E470B1BD4903600F8A03F /* learnswift04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift04.swift; sourceTree = "<group>"; };
+		0B9E470D1BD506B900F8A03F /* learnswift05.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift05.swift; sourceTree = "<group>"; };
+		0B9E470F1BD5FBF900F8A03F /* learnswift06.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift06.swift; sourceTree = "<group>"; };
+		0BA683DC1BD7627F001FD3ED /* learnswift07.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = learnswift07.swift; path = ../learnswift07.swift; sourceTree = "<group>"; };
+		0BA683E01BD78DF8001FD3ED /* learnswift08.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift08.swift; sourceTree = "<group>"; };
 		0BAAA3151BD2354A00FB4933 /* TheSwiftProframmingLanguage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheSwiftProframmingLanguage; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAAA3181BD2354A00FB4933 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0BAAA31F1BD2359C00FB4933 /* learnswift01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = learnswift01.swift; sourceTree = "<group>"; };
@@ -67,6 +91,18 @@
 				0BAAA31F1BD2359C00FB4933 /* learnswift01.swift */,
 				0B9E47071BD31ABE00F8A03F /* learnswift02.swift */,
 				0B9E47091BD3C33500F8A03F /* learnswift03.swift */,
+				0B9E470B1BD4903600F8A03F /* learnswift04.swift */,
+				0B9E470D1BD506B900F8A03F /* learnswift05.swift */,
+				0B9E470F1BD5FBF900F8A03F /* learnswift06.swift */,
+				0BA683DC1BD7627F001FD3ED /* learnswift07.swift */,
+				0BA683E01BD78DF8001FD3ED /* learnswift08.swift */,
+				0B9AD8F41BDBCBA300B1A59E /* learnswift09.swift */,
+				0B9AD8F61BDBD46D00B1A59E /* learnswift10.swift */,
+				0B9AD8F81BDBDDB700B1A59E /* learnswift11.swift */,
+				0B9AD8FA1BDBED4500B1A59E /* learnswift12.swift */,
+				0B9AD8FC1BDBF5AA00B1A59E /* learnswift13.swift */,
+				0B9AD8FE1BDBF8F000B1A59E /* learnswift14.swift */,
+				0B9AD9001BDC8A9A00B1A59E /* learnswift15.swift */,
 			);
 			path = TheSwiftProframmingLanguage;
 			sourceTree = "<group>";
@@ -97,7 +133,9 @@
 		0BAAA30D1BD2354900FB4933 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Benjamin;
 				TargetAttributes = {
 					0BAAA3141BD2354A00FB4933 = {
@@ -127,9 +165,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9AD8F71BDBD46D00B1A59E /* learnswift10.swift in Sources */,
 				0B9E47081BD31ABE00F8A03F /* learnswift02.swift in Sources */,
+				0B9AD9011BDC8A9A00B1A59E /* learnswift15.swift in Sources */,
+				0B9AD8FD1BDBF5AA00B1A59E /* learnswift13.swift in Sources */,
+				0B9AD8F91BDBDDB700B1A59E /* learnswift11.swift in Sources */,
+				0B9AD8F51BDBCBA300B1A59E /* learnswift09.swift in Sources */,
+				0B9AD8FF1BDBF8F000B1A59E /* learnswift14.swift in Sources */,
+				0B9E470C1BD4903600F8A03F /* learnswift04.swift in Sources */,
 				0BAAA3191BD2354A00FB4933 /* main.swift in Sources */,
+				0BA683E11BD78DF8001FD3ED /* learnswift08.swift in Sources */,
+				0BA683DD1BD7627F001FD3ED /* learnswift07.swift in Sources */,
+				0B9E47101BD5FBF900F8A03F /* learnswift06.swift in Sources */,
+				0B9E470E1BD506B900F8A03F /* learnswift05.swift in Sources */,
 				0BAAA3201BD2359C00FB4933 /* learnswift01.swift in Sources */,
+				0B9AD8FB1BDBED4500B1A59E /* learnswift12.swift in Sources */,
 				0B9E470A1BD3C33500F8A03F /* learnswift03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +207,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -168,14 +219,17 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -205,13 +259,16 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 			};
 			name = Release;
 		};

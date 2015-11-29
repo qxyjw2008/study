@@ -1,0 +1,15 @@
+/* 
+  animationWithOptions.strings
+  ViewAnimationDemo
+
+  Created by Benjamin on 11/14/15.
+  Copyright © 2015 Benjamin. All rights reserved.
+*/
+TransitionNone //无转场动画
+TransitionFlipFromLeft //转场从左翻转
+TransitionFlipFromRight //转场从右翻转
+TransitionCurlUp //上卷转场
+TransitionCurlDown //下卷转场
+TransitionCrossDissolve //转场交叉消失
+TransitionFlipFromTop //转场从上翻转
+TransitionFlipFromButtom //转场从下翻转

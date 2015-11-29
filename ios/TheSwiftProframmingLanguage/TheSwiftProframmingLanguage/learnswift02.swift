@@ -159,6 +159,6 @@ class enumAndStruct {
         //宝宝每日英语之:  suit -> 花色  rank -> 大小
         let threeOfSpades = Card(rank: .Three, suit: .Spades)
         let threeOfSpadesDescription = threeOfSpades.simpleDescription()
-        println(threeOfSpadesDescription)
+        print(threeOfSpadesDescription)
     }
 }

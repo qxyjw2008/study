@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "NSURLSessionDownloadViewController.pause(UIButton) -&gt; ():NSURLSessionDownloadViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.partialData">
+            </PersistentString>
+            <PersistentString
+               value = "getSession()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NSURLSessionDownloadViewController.resume(UIButton) -&gt; ():NSURLSessionDownloadViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.partialData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NSURLSessionDownloadViewController.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didWriteData : Int64, totalBytesWritten : Int64, totalBytesExpectedToWrite : Int64) -&gt; ():NSURLSessionDownloadViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSString(format: &quot;%.1f&quot;, currentProgress)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

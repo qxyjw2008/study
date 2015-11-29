@@ -83,12 +83,12 @@ func anyCommonElements2<T: SequenceType, U: SequenceType where
 class MainTest {
     func test1() {
         let intExtension = 7.simpleDescription
-        println(intExtension)
-        let repeat = repeatItem("knock", 4)
-        println(repeat)
-        var possibleInteger: OptionalValue<Int> = .None
-        possibleInteger = .Some(100)
-        let b = anyCommonElements([1,2,3],[3])
-        println(b)
+        print(intExtension)
+        let `repeat` = repeatItem("knock", numberOfTimes: 4)
+        print(`repeat`)
+//        var possibleInteger: OptionalValue<Int> = .None
+//        possibleInteger = .Some(100)
+        let b = anyCommonElements([1,2,3],_rhs: [3])
+        print(b)
     }
 }
