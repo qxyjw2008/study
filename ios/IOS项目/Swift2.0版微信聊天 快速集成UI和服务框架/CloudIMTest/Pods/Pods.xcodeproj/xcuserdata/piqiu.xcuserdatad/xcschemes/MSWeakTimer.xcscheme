@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C4D5377E2487F79EB61DF1F2'
+               BlueprintIdentifier = '658E7ABC4731F84CE964957D'
                BlueprintName = 'MSWeakTimer'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMSWeakTimer.a'>
+               BuildableName = 'MSWeakTimer.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

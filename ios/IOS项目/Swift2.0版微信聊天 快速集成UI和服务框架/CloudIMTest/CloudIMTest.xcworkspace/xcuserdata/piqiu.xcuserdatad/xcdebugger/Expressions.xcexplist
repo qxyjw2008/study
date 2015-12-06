@@ -11,13 +11,27 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "UITextBox.(animationFirstResponder in _07D1B1CDBAD29AEF44A68EF57A203649)(Bool) -&gt; Bool:UITextBox.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "placeholderLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RegiTableViewController.hideKeyBoard() -&gt; ():RegiTableViewController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "textField == labelPassword">
+            </PersistentString>
+            <PersistentString
+               value = "self.labelUsername.superview">
+            </PersistentString>
             <PersistentString
                value = "self.view.subviews">
             </PersistentString>
             <PersistentString
-               value = "self.labelUsername.superview">
+               value = "loginTextField">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

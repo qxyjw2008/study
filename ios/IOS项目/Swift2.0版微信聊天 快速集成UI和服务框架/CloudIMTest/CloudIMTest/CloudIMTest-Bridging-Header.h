@@ -4,7 +4,9 @@
 
 #import <RongIMKit/RongIMKit.h>
 #import <KxMenu/KxMenu.h>
-#import <PopMenu/PopMenu.h>
-#import <JSAnimatedImagesView/JSAnimatedImagesView.h>
+//#import <PopMenu/PopMenu.h>
+//#import <JSAnimatedImagesView/JSAnimatedImagesView.h>
 #import "RCAnimatedImagesView.h"
 #import <IHKeyboardAvoiding/IHKeyboardAvoiding.h>
+//#import <AJWValidator/AJWValidator.h>
+#import <AVOSCloud/AVOSCloud.h>

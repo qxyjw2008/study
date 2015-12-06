@@ -1,4 +1,7 @@
 PODS:
+  - AJWValidator (0.0.8)
+  - Alamofire (3.1.3)
+  - AVOSCloud (3.1.6.7)
   - IHKeyboardAvoiding (2.5)
   - JSAnimatedImagesView (1.0.0):
     - MSWeakTimer (~> 1.0)
@@ -12,6 +15,9 @@ PODS:
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
+  - AJWValidator
+  - Alamofire (~> 3.0)
+  - AVOSCloud
   - IHKeyboardAvoiding
   - JSAnimatedImagesView
   - KxMenu
@@ -19,6 +25,9 @@ DEPENDENCIES:
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
+  AJWValidator: ed00557b9cdcc38a8216aa9ddbd76b4eadb73615
+  Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
+  AVOSCloud: 7af6267747894eadfd14560db08ea99a51b57fc0
   IHKeyboardAvoiding: 8f14fed93405dd2c44ce070a26f780d9e477538c
   JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72

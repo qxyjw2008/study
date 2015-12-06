@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AJWValidator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IHKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>174B4E04F0FE049446122900FE1FF867</key>
+		<key>002094CD6803B7F6AA3FE3F74D3D5775</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B2E2DFEAB9164C3966D663E68547E9C</key>
+		<key>0EDC9C092431FAF0C15F2086CA59E2DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>758BD33A54E94AFAEF82DF604E460408</key>
+		<key>2189A727627A385231CCBFC87D36327A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B3F408556C7654566BEC1C49BDDD256</key>
+		<key>3B3C7E043402AE31E32F07A28778BD32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83F9D25A08742726012728FE360B8C24</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F06F49D64E04DCD9683D916034330CE</key>
+		<key>5689DBC1D9E1890F3636819BE949D0EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
+		<key>59067ACE8EA6BA82B591000A50955D23</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FEFD35519AEC78FD80B9208B4B4569C8</key>
+		<key>65023D4D991F2863E756EFF12BD7C6A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6820846829ED020BAD5FAE69FEDDC861</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9331F9A1C5EBC8641E9DC7140A1D275D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

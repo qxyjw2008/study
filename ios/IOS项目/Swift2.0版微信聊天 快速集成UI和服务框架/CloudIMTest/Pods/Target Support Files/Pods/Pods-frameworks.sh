@@ -82,3 +82,26 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/AJWValidator.framework"
+  install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/IHKeyboardAvoiding.framework"
+  install_framework "Pods/JSAnimatedImagesView.framework"
+  install_framework "Pods/KxMenu.framework"
+  install_framework "Pods/MSWeakTimer.framework"
+  install_framework "Pods/PopMenu.framework"
+  install_framework "Pods/XHRealTimeBlur.framework"
+  install_framework "Pods/pop.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/AJWValidator.framework"
+  install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/IHKeyboardAvoiding.framework"
+  install_framework "Pods/JSAnimatedImagesView.framework"
+  install_framework "Pods/KxMenu.framework"
+  install_framework "Pods/MSWeakTimer.framework"
+  install_framework "Pods/PopMenu.framework"
+  install_framework "Pods/XHRealTimeBlur.framework"
+  install_framework "Pods/pop.framework"
+fi

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopMenu
 
 class ConversationListViewController: RCConversationListViewController {
     

@@ -43,9 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
     }
     
     func connectServer(success: () -> Void) {
-        //查询保存的token
-        //        let tokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
-        
         //初始化appkey
         RCIM.sharedRCIM().initWithAppKey(myAppKey)
         
@@ -65,6 +62,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //连通leancloud
+        AVOSCloud.setApplicationId("Ew2IHKmTK7FLSY8KMdopsVb4", clientKey: "92RggMiNgz5mfz3cp5gEgpt1")
+        //跟踪应用打开情况
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         return true
     }
 

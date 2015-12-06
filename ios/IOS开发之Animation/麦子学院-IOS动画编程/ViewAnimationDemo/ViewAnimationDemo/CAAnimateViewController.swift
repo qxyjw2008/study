@@ -18,8 +18,8 @@ class CAAnimateViewController: UIViewController {
     }
     @IBAction func startBtnClicked(sender: UIButton) {
 //        self.implicitAnimation()
-//        self.explicitAnimation()
-        self.curveKeyFrameAnimation()
+        self.explicitAnimation()
+//        self.curveKeyFrameAnimation()
 //        self.normalKeyFrameAnimation()
     }
 
