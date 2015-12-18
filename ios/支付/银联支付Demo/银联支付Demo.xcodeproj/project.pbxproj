@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA5850E1BEA6CA100BC5441 /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA5850D1BEA6CA100BC5441 /* libUPPayPlugin.a */; settings = {ASSET_TAGS = (); }; };
+		DAFF8C741BE3450D00152833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C731BE3450D00152833 /* main.m */; };
+		DAFF8C771BE3450D00152833 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C761BE3450D00152833 /* AppDelegate.m */; };
+		DAFF8C7A1BE3450D00152833 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C791BE3450D00152833 /* ViewController.mm */; };
+		DAFF8C7D1BE3450D00152833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFF8C7B1BE3450D00152833 /* Main.storyboard */; };
+		DAFF8C801BE3450D00152833 /* ____Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C7E1BE3450D00152833 /* ____Demo.xcdatamodeld */; };
+		DAFF8C821BE3450D00152833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFF8C811BE3450D00152833 /* Assets.xcassets */; };
+		DAFF8C851BE3450D00152833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFF8C831BE3450D00152833 /* LaunchScreen.storyboard */; };
+		DAFF8C901BE3450D00152833 /* ____DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C8F1BE3450D00152833 /* ____DemoTests.m */; };
+		DAFF8C9B1BE3450D00152833 /* ____DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8C9A1BE3450D00152833 /* ____DemoUITests.m */; };
+		DAFF8CE11BE345B700152833 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CB41BE345B700152833 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE21BE345B700152833 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CB61BE345B700152833 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE31BE345B700152833 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CB81BE345B700152833 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE41BE345B700152833 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CBB1BE345B700152833 /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE51BE345B700152833 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CBD1BE345B700152833 /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE61BE345B700152833 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CBF1BE345B700152833 /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE71BE345B700152833 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CC11BE345B700152833 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE81BE345B700152833 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CC31BE345B700152833 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CE91BE345B700152833 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CC51BE345B700152833 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CEA1BE345B700152833 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DAFF8CC61BE345B700152833 /* LICENSE */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CEB1BE345B700152833 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CC71BE345B700152833 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CEC1BE345B700152833 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CCA1BE345B700152833 /* AFNetworkActivityIndicatorManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CED1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CCC1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CEE1BE345B700152833 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CCE1BE345B700152833 /* UIAlertView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CEF1BE345B700152833 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CD01BE345B700152833 /* UIButton+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF01BE345B700152833 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CD21BE345B700152833 /* UIImageView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF11BE345B700152833 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CD51BE345B700152833 /* UIProgressView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF21BE345B700152833 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CD71BE345B700152833 /* UIRefreshControl+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF31BE345B700152833 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CD91BE345B700152833 /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF41BE345B700152833 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAFF8CDB1BE345B700152833 /* LICENCE.txt */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF51BE345B700152833 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CDD1BE345B700152833 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF61BE345B700152833 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CDE1BE345B700152833 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF71BE345B700152833 /* ZqNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF8CE01BE345B700152833 /* ZqNetWork.m */; settings = {ASSET_TAGS = (); }; };
+		DAFF8CF91BE3495D00152833 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF8CF81BE3495D00152833 /* QuartzCore.framework */; };
+		DAFF8CFB1BE3496900152833 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFF8CFA1BE3496900152833 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAFF8C8C1BE3450D00152833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF8C671BE3450C00152833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFF8C6E1BE3450D00152833;
+			remoteInfo = "银联支付Demo";
+		};
+		DAFF8C971BE3450D00152833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFF8C671BE3450C00152833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFF8C6E1BE3450D00152833;
+			remoteInfo = "银联支付Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAA585091BEA6CA100BC5441 /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
+		DAA5850A1BEA6CA100BC5441 /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		DAA5850B1BEA6CA100BC5441 /* UPPayPluginPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginPro.h; sourceTree = "<group>"; };
+		DAA5850D1BEA6CA100BC5441 /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
+		DAFF8C6F1BE3450D00152833 /* 银联支付Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "银联支付Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFF8C731BE3450D00152833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAFF8C751BE3450D00152833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAFF8C761BE3450D00152833 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAFF8C781BE3450D00152833 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAFF8C791BE3450D00152833 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		DAFF8C7C1BE3450D00152833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAFF8C7F1BE3450D00152833 /* ____Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "____Demo.xcdatamodel"; sourceTree = "<group>"; };
+		DAFF8C811BE3450D00152833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAFF8C841BE3450D00152833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAFF8C861BE3450D00152833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFF8C8B1BE3450D00152833 /* 银联支付DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "银联支付DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFF8C8F1BE3450D00152833 /* ____DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____DemoTests.m"; sourceTree = "<group>"; };
+		DAFF8C911BE3450D00152833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFF8C961BE3450D00152833 /* 银联支付DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "银联支付DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFF8C9A1BE3450D00152833 /* ____DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____DemoUITests.m"; sourceTree = "<group>"; };
+		DAFF8C9C1BE3450D00152833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFF8CB31BE345B700152833 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DAFF8CB41BE345B700152833 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DAFF8CB51BE345B700152833 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		DAFF8CB61BE345B700152833 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		DAFF8CB71BE345B700152833 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DAFF8CB81BE345B700152833 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DAFF8CB91BE345B700152833 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DAFF8CBA1BE345B700152833 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DAFF8CBB1BE345B700152833 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DAFF8CBC1BE345B700152833 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DAFF8CBD1BE345B700152833 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DAFF8CBE1BE345B700152833 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DAFF8CBF1BE345B700152833 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DAFF8CC01BE345B700152833 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DAFF8CC11BE345B700152833 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DAFF8CC21BE345B700152833 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DAFF8CC31BE345B700152833 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DAFF8CC41BE345B700152833 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DAFF8CC51BE345B700152833 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DAFF8CC61BE345B700152833 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAFF8CC71BE345B700152833 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAFF8CC91BE345B700152833 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		DAFF8CCA1BE345B700152833 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		DAFF8CCB1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CCC1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CCD1BE345B700152833 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CCE1BE345B700152833 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CCF1BE345B700152833 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD01BE345B700152833 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CD11BE345B700152833 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD21BE345B700152833 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CD31BE345B700152833 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD41BE345B700152833 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD51BE345B700152833 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CD61BE345B700152833 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD71BE345B700152833 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CD81BE345B700152833 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAFF8CD91BE345B700152833 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAFF8CDB1BE345B700152833 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		DAFF8CDC1BE345B700152833 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DAFF8CDD1BE345B700152833 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DAFF8CDE1BE345B700152833 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAFF8CDF1BE345B700152833 /* ZqNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZqNetWork.h; sourceTree = "<group>"; };
+		DAFF8CE01BE345B700152833 /* ZqNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZqNetWork.m; sourceTree = "<group>"; };
+		DAFF8CF81BE3495D00152833 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DAFF8CFA1BE3496900152833 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAFF8C6C1BE3450D00152833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF8CFB1BE3496900152833 /* Security.framework in Frameworks */,
+				DAA5850E1BEA6CA100BC5441 /* libUPPayPlugin.a in Frameworks */,
+				DAFF8CF91BE3495D00152833 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C881BE3450D00152833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C931BE3450D00152833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA585061BEA6CA100BC5441 /* upmp_iphone */ = {
+			isa = PBXGroup;
+			children = (
+				DAA585071BEA6CA100BC5441 /* sdk */,
+			);
+			path = upmp_iphone;
+			sourceTree = "<group>";
+		};
+		DAA585071BEA6CA100BC5441 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				DAA585081BEA6CA100BC5441 /* inc */,
+				DAA5850C1BEA6CA100BC5441 /* libs */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		DAA585081BEA6CA100BC5441 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				DAA585091BEA6CA100BC5441 /* UPPayPlugin.h */,
+				DAA5850A1BEA6CA100BC5441 /* UPPayPluginDelegate.h */,
+				DAA5850B1BEA6CA100BC5441 /* UPPayPluginPro.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		DAA5850C1BEA6CA100BC5441 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DAA5850D1BEA6CA100BC5441 /* libUPPayPlugin.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		DAFF8C661BE3450C00152833 = {
+			isa = PBXGroup;
+			children = (
+				DAFF8CFA1BE3496900152833 /* Security.framework */,
+				DAFF8CF81BE3495D00152833 /* QuartzCore.framework */,
+				DAFF8C711BE3450D00152833 /* 银联支付Demo */,
+				DAFF8C8E1BE3450D00152833 /* 银联支付DemoTests */,
+				DAFF8C991BE3450D00152833 /* 银联支付DemoUITests */,
+				DAFF8C701BE3450D00152833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAFF8C701BE3450D00152833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8C6F1BE3450D00152833 /* 银联支付Demo.app */,
+				DAFF8C8B1BE3450D00152833 /* 银联支付DemoTests.xctest */,
+				DAFF8C961BE3450D00152833 /* 银联支付DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFF8C711BE3450D00152833 /* 银联支付Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DAA585061BEA6CA100BC5441 /* upmp_iphone */,
+				DAFF8CB11BE345B700152833 /* AFNetworking */,
+				DAFF8CDA1BE345B700152833 /* Reachability */,
+				DAFF8CDF1BE345B700152833 /* ZqNetWork.h */,
+				DAFF8CE01BE345B700152833 /* ZqNetWork.m */,
+				DAFF8C751BE3450D00152833 /* AppDelegate.h */,
+				DAFF8C761BE3450D00152833 /* AppDelegate.m */,
+				DAFF8C781BE3450D00152833 /* ViewController.h */,
+				DAFF8C791BE3450D00152833 /* ViewController.mm */,
+				DAFF8C7B1BE3450D00152833 /* Main.storyboard */,
+				DAFF8C811BE3450D00152833 /* Assets.xcassets */,
+				DAFF8C831BE3450D00152833 /* LaunchScreen.storyboard */,
+				DAFF8C861BE3450D00152833 /* Info.plist */,
+				DAFF8C7E1BE3450D00152833 /* ____Demo.xcdatamodeld */,
+				DAFF8C721BE3450D00152833 /* Supporting Files */,
+			);
+			path = "银联支付Demo";
+			sourceTree = "<group>";
+		};
+		DAFF8C721BE3450D00152833 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8C731BE3450D00152833 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAFF8C8E1BE3450D00152833 /* 银联支付DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8C8F1BE3450D00152833 /* ____DemoTests.m */,
+				DAFF8C911BE3450D00152833 /* Info.plist */,
+			);
+			path = "银联支付DemoTests";
+			sourceTree = "<group>";
+		};
+		DAFF8C991BE3450D00152833 /* 银联支付DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8C9A1BE3450D00152833 /* ____DemoUITests.m */,
+				DAFF8C9C1BE3450D00152833 /* Info.plist */,
+			);
+			path = "银联支付DemoUITests";
+			sourceTree = "<group>";
+		};
+		DAFF8CB11BE345B700152833 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8CB21BE345B700152833 /* AFNetworking */,
+				DAFF8CC61BE345B700152833 /* LICENSE */,
+				DAFF8CC71BE345B700152833 /* README.md */,
+				DAFF8CC81BE345B700152833 /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DAFF8CB21BE345B700152833 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8CB31BE345B700152833 /* AFHTTPRequestOperation.h */,
+				DAFF8CB41BE345B700152833 /* AFHTTPRequestOperation.m */,
+				DAFF8CB51BE345B700152833 /* AFHTTPRequestOperationManager.h */,
+				DAFF8CB61BE345B700152833 /* AFHTTPRequestOperationManager.m */,
+				DAFF8CB71BE345B700152833 /* AFHTTPSessionManager.h */,
+				DAFF8CB81BE345B700152833 /* AFHTTPSessionManager.m */,
+				DAFF8CB91BE345B700152833 /* AFNetworking.h */,
+				DAFF8CBA1BE345B700152833 /* AFNetworkReachabilityManager.h */,
+				DAFF8CBB1BE345B700152833 /* AFNetworkReachabilityManager.m */,
+				DAFF8CBC1BE345B700152833 /* AFSecurityPolicy.h */,
+				DAFF8CBD1BE345B700152833 /* AFSecurityPolicy.m */,
+				DAFF8CBE1BE345B700152833 /* AFURLConnectionOperation.h */,
+				DAFF8CBF1BE345B700152833 /* AFURLConnectionOperation.m */,
+				DAFF8CC01BE345B700152833 /* AFURLRequestSerialization.h */,
+				DAFF8CC11BE345B700152833 /* AFURLRequestSerialization.m */,
+				DAFF8CC21BE345B700152833 /* AFURLResponseSerialization.h */,
+				DAFF8CC31BE345B700152833 /* AFURLResponseSerialization.m */,
+				DAFF8CC41BE345B700152833 /* AFURLSessionManager.h */,
+				DAFF8CC51BE345B700152833 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DAFF8CC81BE345B700152833 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8CC91BE345B700152833 /* AFNetworkActivityIndicatorManager.h */,
+				DAFF8CCA1BE345B700152833 /* AFNetworkActivityIndicatorManager.m */,
+				DAFF8CCB1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.h */,
+				DAFF8CCC1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.m */,
+				DAFF8CCD1BE345B700152833 /* UIAlertView+AFNetworking.h */,
+				DAFF8CCE1BE345B700152833 /* UIAlertView+AFNetworking.m */,
+				DAFF8CCF1BE345B700152833 /* UIButton+AFNetworking.h */,
+				DAFF8CD01BE345B700152833 /* UIButton+AFNetworking.m */,
+				DAFF8CD11BE345B700152833 /* UIImageView+AFNetworking.h */,
+				DAFF8CD21BE345B700152833 /* UIImageView+AFNetworking.m */,
+				DAFF8CD31BE345B700152833 /* UIKit+AFNetworking.h */,
+				DAFF8CD41BE345B700152833 /* UIProgressView+AFNetworking.h */,
+				DAFF8CD51BE345B700152833 /* UIProgressView+AFNetworking.m */,
+				DAFF8CD61BE345B700152833 /* UIRefreshControl+AFNetworking.h */,
+				DAFF8CD71BE345B700152833 /* UIRefreshControl+AFNetworking.m */,
+				DAFF8CD81BE345B700152833 /* UIWebView+AFNetworking.h */,
+				DAFF8CD91BE345B700152833 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		DAFF8CDA1BE345B700152833 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF8CDB1BE345B700152833 /* LICENCE.txt */,
+				DAFF8CDC1BE345B700152833 /* Reachability.h */,
+				DAFF8CDD1BE345B700152833 /* Reachability.m */,
+				DAFF8CDE1BE345B700152833 /* README.md */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAFF8C6E1BE3450D00152833 /* 银联支付Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFF8C9F1BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付Demo" */;
+			buildPhases = (
+				DAFF8C6B1BE3450D00152833 /* Sources */,
+				DAFF8C6C1BE3450D00152833 /* Frameworks */,
+				DAFF8C6D1BE3450D00152833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "银联支付Demo";
+			productName = "银联支付Demo";
+			productReference = DAFF8C6F1BE3450D00152833 /* 银联支付Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAFF8C8A1BE3450D00152833 /* 银联支付DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFF8CA21BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付DemoTests" */;
+			buildPhases = (
+				DAFF8C871BE3450D00152833 /* Sources */,
+				DAFF8C881BE3450D00152833 /* Frameworks */,
+				DAFF8C891BE3450D00152833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFF8C8D1BE3450D00152833 /* PBXTargetDependency */,
+			);
+			name = "银联支付DemoTests";
+			productName = "银联支付DemoTests";
+			productReference = DAFF8C8B1BE3450D00152833 /* 银联支付DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAFF8C951BE3450D00152833 /* 银联支付DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFF8CA51BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付DemoUITests" */;
+			buildPhases = (
+				DAFF8C921BE3450D00152833 /* Sources */,
+				DAFF8C931BE3450D00152833 /* Frameworks */,
+				DAFF8C941BE3450D00152833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFF8C981BE3450D00152833 /* PBXTargetDependency */,
+			);
+			name = "银联支付DemoUITests";
+			productName = "银联支付DemoUITests";
+			productReference = DAFF8C961BE3450D00152833 /* 银联支付DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAFF8C671BE3450C00152833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "蓝鸥科技";
+				TargetAttributes = {
+					DAFF8C6E1BE3450D00152833 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DAFF8C8A1BE3450D00152833 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DAFF8C6E1BE3450D00152833;
+					};
+					DAFF8C951BE3450D00152833 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DAFF8C6E1BE3450D00152833;
+					};
+				};
+			};
+			buildConfigurationList = DAFF8C6A1BE3450C00152833 /* Build configuration list for PBXProject "银联支付Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAFF8C661BE3450C00152833;
+			productRefGroup = DAFF8C701BE3450D00152833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAFF8C6E1BE3450D00152833 /* 银联支付Demo */,
+				DAFF8C8A1BE3450D00152833 /* 银联支付DemoTests */,
+				DAFF8C951BE3450D00152833 /* 银联支付DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFF8C6D1BE3450D00152833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF8CF41BE345B700152833 /* LICENCE.txt in Resources */,
+				DAFF8C851BE3450D00152833 /* LaunchScreen.storyboard in Resources */,
+				DAFF8C821BE3450D00152833 /* Assets.xcassets in Resources */,
+				DAFF8CEA1BE345B700152833 /* LICENSE in Resources */,
+				DAFF8C7D1BE3450D00152833 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C891BE3450D00152833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C941BE3450D00152833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAFF8C6B1BE3450D00152833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF8C7A1BE3450D00152833 /* ViewController.mm in Sources */,
+				DAFF8CE51BE345B700152833 /* AFSecurityPolicy.m in Sources */,
+				DAFF8CEF1BE345B700152833 /* UIButton+AFNetworking.m in Sources */,
+				DAFF8C771BE3450D00152833 /* AppDelegate.m in Sources */,
+				DAFF8CF11BE345B700152833 /* UIProgressView+AFNetworking.m in Sources */,
+				DAFF8CE21BE345B700152833 /* AFHTTPRequestOperationManager.m in Sources */,
+				DAFF8CF61BE345B700152833 /* README.md in Sources */,
+				DAFF8CE61BE345B700152833 /* AFURLConnectionOperation.m in Sources */,
+				DAFF8CE11BE345B700152833 /* AFHTTPRequestOperation.m in Sources */,
+				DAFF8CF21BE345B700152833 /* UIRefreshControl+AFNetworking.m in Sources */,
+				DAFF8C801BE3450D00152833 /* ____Demo.xcdatamodeld in Sources */,
+				DAFF8CE71BE345B700152833 /* AFURLRequestSerialization.m in Sources */,
+				DAFF8CF01BE345B700152833 /* UIImageView+AFNetworking.m in Sources */,
+				DAFF8CE31BE345B700152833 /* AFHTTPSessionManager.m in Sources */,
+				DAFF8CEE1BE345B700152833 /* UIAlertView+AFNetworking.m in Sources */,
+				DAFF8CF71BE345B700152833 /* ZqNetWork.m in Sources */,
+				DAFF8CE41BE345B700152833 /* AFNetworkReachabilityManager.m in Sources */,
+				DAFF8CEB1BE345B700152833 /* README.md in Sources */,
+				DAFF8CF31BE345B700152833 /* UIWebView+AFNetworking.m in Sources */,
+				DAFF8CF51BE345B700152833 /* Reachability.m in Sources */,
+				DAFF8CE81BE345B700152833 /* AFURLResponseSerialization.m in Sources */,
+				DAFF8CE91BE345B700152833 /* AFURLSessionManager.m in Sources */,
+				DAFF8C741BE3450D00152833 /* main.m in Sources */,
+				DAFF8CED1BE345B700152833 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				DAFF8CEC1BE345B700152833 /* AFNetworkActivityIndicatorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C871BE3450D00152833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF8C901BE3450D00152833 /* ____DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFF8C921BE3450D00152833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF8C9B1BE3450D00152833 /* ____DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAFF8C8D1BE3450D00152833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFF8C6E1BE3450D00152833 /* 银联支付Demo */;
+			targetProxy = DAFF8C8C1BE3450D00152833 /* PBXContainerItemProxy */;
+		};
+		DAFF8C981BE3450D00152833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFF8C6E1BE3450D00152833 /* 银联支付Demo */;
+			targetProxy = DAFF8C971BE3450D00152833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAFF8C7B1BE3450D00152833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFF8C7C1BE3450D00152833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAFF8C831BE3450D00152833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFF8C841BE3450D00152833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAFF8C9D1BE3450D00152833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAFF8C9E1BE3450D00152833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAFF8CA01BE3450D00152833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Peipei Tian (RQDV957M4H)";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "银联支付Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/银联支付Demo/upmp_iphone/sdk/libs",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9a663a2-0101-4825-bafb-0b4992b9e1fe";
+			};
+			name = Debug;
+		};
+		DAFF8CA11BE3450D00152833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Peipei Tian (RQDV957M4H)";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "银联支付Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/银联支付Demo/upmp_iphone/sdk/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9a663a2-0101-4825-bafb-0b4992b9e1fe";
+			};
+			name = Release;
+		};
+		DAFF8CA31BE3450D00152833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "银联支付DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/银联支付Demo.app/银联支付Demo";
+			};
+			name = Debug;
+		};
+		DAFF8CA41BE3450D00152833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "银联支付DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/银联支付Demo.app/银联支付Demo";
+			};
+			name = Release;
+		};
+		DAFF8CA61BE3450D00152833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "银联支付DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "银联支付Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAFF8CA71BE3450D00152833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "银联支付DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lanou.----DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "银联支付Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAFF8C6A1BE3450C00152833 /* Build configuration list for PBXProject "银联支付Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFF8C9D1BE3450D00152833 /* Debug */,
+				DAFF8C9E1BE3450D00152833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFF8C9F1BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFF8CA01BE3450D00152833 /* Debug */,
+				DAFF8CA11BE3450D00152833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFF8CA21BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFF8CA31BE3450D00152833 /* Debug */,
+				DAFF8CA41BE3450D00152833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFF8CA51BE3450D00152833 /* Build configuration list for PBXNativeTarget "银联支付DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFF8CA61BE3450D00152833 /* Debug */,
+				DAFF8CA71BE3450D00152833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAFF8C7E1BE3450D00152833 /* ____Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAFF8C7F1BE3450D00152833 /* ____Demo.xcdatamodel */,
+			);
+			currentVersion = DAFF8C7F1BE3450D00152833 /* ____Demo.xcdatamodel */;
+			path = "____Demo.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAFF8C671BE3450C00152833 /* Project object */;
+}

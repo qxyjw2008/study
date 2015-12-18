@@ -1,0 +1,3 @@
+pod 'MJRefresh'
+pod 'PathCover', '~> 0.1.2'
+pod 'SDWebImage', '~>3.7.3'

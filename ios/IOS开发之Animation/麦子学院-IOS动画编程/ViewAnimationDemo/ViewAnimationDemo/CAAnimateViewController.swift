@@ -58,27 +58,29 @@ class CAAnimateViewController: UIViewController {
     func explicitAnimation() {
         let imageView = UIImageView(image: UIImage(named: "1"))
         imageView.frame = CGRectMake(150, 200, 100, 100)
+        imageView.layer.cornerRadius = 50
+        imageView.clipsToBounds = true
         self.view.addSubview(imageView)
         
         let imageLayer = imageView.layer
         
         let scaleAnimate = CABasicAnimation(keyPath: "transform.scale")
         scaleAnimate.fromValue = 1.0
-        scaleAnimate.toValue = 1.5
+        scaleAnimate.toValue = 0.8
         scaleAnimate.autoreverses = true
         scaleAnimate.repeatCount = MAXFLOAT
-        scaleAnimate.duration = 1.0
+        scaleAnimate.duration = 2.0
         
-        let opaqueAnimate = CABasicAnimation(keyPath: "opacity")
-        opaqueAnimate.fromValue = 0.0
-        opaqueAnimate.toValue = 1.0
-        opaqueAnimate.autoreverses = true
-        opaqueAnimate.duration = 1.0
-        opaqueAnimate.repeatCount = MAXFLOAT
+//        let opaqueAnimate = CABasicAnimation(keyPath: "opacity")
+//        opaqueAnimate.fromValue = 0.0
+//        opaqueAnimate.toValue = 1.0
+//        opaqueAnimate.autoreverses = true
+//        opaqueAnimate.duration = 1.0
+//        opaqueAnimate.repeatCount = MAXFLOAT
         
         
         imageLayer.addAnimation(scaleAnimate, forKey: "scaleAnimate")
-        imageLayer.addAnimation(opaqueAnimate, forKey: "opaqueAnimate")
+//        imageLayer.addAnimation(opaqueAnimate, forKey: "opaqueAnimate")
         
     }
     

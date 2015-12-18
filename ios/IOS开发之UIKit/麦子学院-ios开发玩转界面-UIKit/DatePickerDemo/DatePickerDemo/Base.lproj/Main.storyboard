@@ -30,15 +30,23 @@
                                     <action selector="datePicker1:" destination="BYZ-38-t0r" eventType="valueChanged" id="mqJ-VK-tTL"/>
                                 </connections>
                             </datePicker>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp2-zG-uP5">
+                                <rect key="frame" x="20" y="237" width="600" height="216"/>
+                                <animations/>
+                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pp2-zG-uP5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="12E-9c-jSg"/>
                             <constraint firstItem="2WG-bb-jGj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="42o-G8-hEG"/>
                             <constraint firstAttribute="trailing" secondItem="2WG-bb-jGj" secondAttribute="trailing" id="4pd-Ab-RQF"/>
                             <constraint firstItem="2WG-bb-jGj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GIp-Pn-NI0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView1" destination="Pp2-zG-uP5" id="YXR-Yn-yre"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
