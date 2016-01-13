@@ -77,8 +77,8 @@
 
 - (IBAction)reset:(UIButton *)sender {
     
+    _btn.frame = originFrame;
     [self btnClickWithBlock:^{
-        _btn.frame = originFrame;
         _btn.transform = CGAffineTransformIdentity;
     }];
 }

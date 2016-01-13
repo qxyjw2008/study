@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BaiduWalletSDKDemo" default="debug" basedir=".">
+    
+    <!-- 环境变量的定义  -->
+    <property environment="env"/>
+	
+    <property name="demo-build.home" value="${basedir}"/>
+    <property name="src.dir" value="${basedir}/src"/>
+    <property name="res.dir" value="${basedir}/res"/>
+    <property name="bin.dir" value="${basedir}/bin"/>
+    <property name="classes.dir" value="${bin.dir}/classes"/>
+    <property name="demo_manifest" value="${demo-build.home}/AndroidManifest.xml" />
+    <property name="proxy_res.dir" value="${demo_sdk.dir}/res"/>
+	<property name="demo_sdk.dir" value="../"/>
+    
+	<tstamp/>
+	<property name="out-debug-package" value="${basedir}/demo_bin/BaiduWallet_NOPlugin_v1.1.0.0_${DSTAMP}_${TSTAMP}_Demo.apk"/>
+    
+	<property name="resources-package" value="${basedir}/bin/BaiduWalletDemo.ap_"/>
+    <property name="demo_asset.dir" value="${basedir}/assets"/>
+    <property name="demo_lib.dir" value="${basedir}/libs"/>
+    
+    <tstamp/>  
+		<echo>DSTAMP: ${DSTAMP}</echo>  
+		<echo>TSTAMP: ${TSTAMP}</echo>  
+		<echo>TODAY: ${TODAY}</echo>
+	
+    <condition property="sdk-folder"
+                value="D:\AndroidStudio\adt-bundle-windows-x86_64-20131030\sdk"
+                else="${env.ANDROID_SDK_HOME}" >
+        <equals arg1="${env.ANDROID_SDK_HOME}" arg2=""/>
+    </condition>
+    
+    <!-- 指定jarsigner路径-->
+	<condition property="jarsigner"
+	                value="/home/kanfei/Development/jdk1.8.0_05/bin/jarsigner.exe"
+	                else="${env.JDK_HOME}/bin/jarsigner.exe" >
+		<equals arg1="${env.JDK_HOME}" arg2=""/>
+	</condition>
+      
+    <!-- load target from project.properties -->
+	<property file="project.properties" prefix="android_sdk" />
+	<fail unless="android_sdk.target" message="project.properties has a problem!!"/>
+	<property name="sdk-platform-folder" value="${sdk-folder}/platforms/${android_sdk.target}" />
+	<property name="proguard-config" value="${sdk-folder}/platforms/${android_sdk.proguard.config}" />
+
+	<property name="android-tools" value="${sdk-folder}/tools" />
+	<property name="android-platform-tools" value="${sdk-folder}/platform-tools" />
+	<property name="android-framework" value="${sdk-platform-folder}/framework.aidl" />
+	
+	<!-- Intermediate files -->
+	<property name="dex-file" value="classes.dex" />
+	<property name="intermediate-dex" value="${demo-build.home}/demo_bin/${dex-file}" />
+	
+	<property name="target-signed-package-dir" value="${basedir}/output" />
+	<!-- 兼容老版本sdk及Google ADT开发环境. -->
+    <condition property="android-build-tools.path"
+            value="${sdk-folder}/build-tools/19.0.1"
+            else="${sdk-folder}/build-tools/android-4.2.2" >
+        <available file="${sdk-folder}/build-tools/19.0.1" type="dir"/>
+    </condition>
+    <echo>看看路径到底是什么 = ${android-build-tools.path}</echo>
+    <condition property="android-build-tools"
+            value="${android-build-tools.path}"
+            else="${android-platform-tools}" >
+        <available file="${android-build-tools.path}" type="dir"/>
+    </condition>
+    
+    <!-- Tools -->
+	<condition property="aapt" value="${android-build-tools}/aapt.exe" else="${android-build-tools}/aapt" >
+		<os family="windows"/>
+	</condition>
+	<condition property="aidl" value="${android-build-tools}/aidl.exe" else="${android-build-tools}/aidl" >
+		<os family="windows"/>
+	</condition>
+	<condition property="adb" value="${android-platform-tools}/adb.exe" else="${android-platform-tools}/adb" >
+		<os family="windows"/>
+	</condition>
+	<condition property="zipalign" value="${android-tools}/zipalign.exe" else="${android-tools}/zipalign" >
+		<os family="windows"/>
+	</condition>
+	<condition property="dx" value="${android-build-tools}/dx.bat" else="${android-build-tools}/dx" >
+		<os family="windows"/>
+	</condition>
+	<condition property="apk-builder" value="${android-tools}/apkbuilder.bat" else="${android-tools}/apkbuilder" >
+		<os family="windows"/>
+	</condition>
+
+    <property name="android-jar" value="${sdk-platform-folder}/android.jar" />
+    
+    <tstamp>
+        <format property="TODAY" pattern="yyyy-MM-dd" locale="cn" />
+    </tstamp>
+	
+
+    <!-- apk-builder 打debug包 -->
+	<!-- Package the application and sign it with a debug key.
+         This is the default target when building. It is used for debug. -->
+	<target name="debug" depends="dex, package-res, load-manifest">
+		<echo>++++++++++ : Packaging ${out-debug-package}, and signing it with a debug key++++++++++</echo>
+		<echo>---------- : ${apk-builder}, ${resources-package}, ${intermediate-dex}, ${demo_lib.dir}</echo>
+		<tstamp/>
+		<exec executable="${apk-builder}" failonerror="true">
+			<arg value="${basedir}/demo_bin/BaiduWallet_NOPlugin_v${base.manifest.android:versionName}_${DSTAMP}_${TSTAMP}_Demo.apk" />
+			<arg value="-z" />
+			<arg value="${resources-package}" />
+			<arg value="-f" />
+			<arg value="${intermediate-dex}" />
+			<arg value="-rf" />
+			<arg value="${src.dir}" />
+			<arg value="-rj" />
+			<arg value="${demo_lib.dir}" />
+			<arg value="-rj" />
+			<arg value="${demo-build.home}/demo_bin/libs" />
+			<arg value="-nf" />
+			<arg value="${demo_lib.dir}" />
+			<arg value="-nf" />
+			<arg value="${demo-build.home}/demo_bin/libs" />
+		</exec>
+	</target>
+	
+	<!-- 生成不混淆的dex -->
+	<!-- Convert this project's .class files into .dex files. -->
+	<target name="dex" depends="compile_demo">
+		<echo>++++++++++ : Converting compiled files and external libraries into...${demo-build.home}/demo_bin/libs</echo>
+		<echo>++++++++++ : ${dx} --dex --output=${intermediate-dex} ${demo-build.home}/demo_bin/classes</echo>
+		<exec executable="${dx}" failonerror="true"  >
+			<arg value="--dex" />
+			<arg value="--output=${intermediate-dex}" />
+			<arg path="${demo-build.home}/demo_bin/classes" />	
+			<arg path="${demo-build.home}/demo_bin/libs/*.jar" />	
+		</exec>
+	</target>
+	
+	<echo> add libs into javac : ${demo-build.home}/demo_bin/libs </echo>
+	<path id="classpath_exclude">	
+		
+        <fileset dir="${demo-build.home}/demo_bin/libs"> 
+             		
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+	<!-- 编译 wallet java 文件 -->
+	<!-- Compile this project's .java files into .class files. -->
+	<target name="compile_demo" depends="resource-src">
+	<echo>${demo-build.home}/demo_bin/libs</echo>
+	    <echo>++++++++++ : compile </echo>
+	    <echo>android jar 路径 ： ${android-jar}</echo>
+		<javac encoding="UTF-8" target="1.6" debug="true" extdirs=""
+                srcdir="${src.dir}"
+                destdir="${demo-build.home}/demo_bin/classes"
+                bootclasspath="${android-jar}">
+			<classpath refid="classpath_exclude"/>
+            
+		</javac>
+	</target>
+	
+	<target name="check-load-manifest">
+        <condition property="has-loaded-manifest">
+            <isset property="base.manifest.android:versionName"/>
+        </condition>
+    </target>
+	
+    <!-- 读取AndroidManifest.xml中的信息 -->
+    <target name="load-manifest" depends="check-load-manifest" unless="has-loaded-manifest">
+        <xmlproperty file="./AndroidManifest.xml"
+            prefix="base" collapseattributes="true" keeproot="true"/>
+        <echo>Loading androidmanifest.xml...</echo>
+        <property name="has-loaded-manifest" value="true"/>
+    </target>
+    
+    
+    <!-- 编译 R -->
+	<!-- Generate the R.java file for this project's resources. -->
+	<target name="resource-src" depends="copy_resources">
+		<echo>++++++++++ : Generating R.java / Manifest.java from the resources...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-m" />
+			<arg value="-J" />
+			<arg value="${src.dir}" />
+			<arg value="-M" />
+			<arg value="${demo_manifest}" />
+			<arg value="-S" />
+			<arg value="${res.dir}" />
+			<arg value="-S"/>
+			<arg value="${demo-build.home}/demo_bin/res"/>
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="--auto-add-overlay"/>
+		</exec>
+	</target>
+    
+	<!-- Rules -->
+    <!-- 指定输出目录 -->
+	<!-- Create the output directories if they don't exist yet. -->
+	<target name="dirs">
+		<echo>++++++++++ : Creating output directories if needed...</echo>
+		<echo>channel NO: ${channelNO} </echo>
+		<echo>env variables: ${sdk-folder} ${jarsigner} </echo>
+		<echo>Output Package: ${out-signed-package-destfile} </echo>
+		<echo>路径xxxxx：${demo-build.home}</echo>
+		<delete failonerror="true" dir="${demo-build.home}/demo_bin" />
+	    <mkdir dir="${demo-build.home}/demo_bin" />
+	    <mkdir dir="${demo-build.home}/demo_bin/classes"/>
+		<mkdir dir="${demo-build.home}/bin/classes"/>
+		<mkdir dir="${demo-build.home}/demo_bin/assets"/>
+		<mkdir dir="${demo-build.home}/demo_bin/libs"/>
+		<mkdir dir="${demo-build.home}/demo_bin/res"/>
+	</target>
+	
+	<!-- 路径需要适当修改！ -->
+	<target name="copy_resources" depends="dirs">	
+	   
+		
+		<copy todir="${demo-build.home}/demo_bin/res">
+	        <fileset dir="${demo_sdk.dir}/output/res">
+	            <include name="**/*.*"/>
+	        </fileset>
+	    </copy>
+		
+		<copy todir="${demo-build.home}/demo_bin/libs">
+	        <fileset dir="${demo_sdk.dir}/output/libs">
+	            <include name="**/*.*"/>
+	        </fileset>
+	    </copy>
+		<copy todir="${demo-build.home}/demo_bin/libs">
+	        <fileset dir="${demo_sdk.dir}/output">
+	            <include name="*.jar"/>
+	        </fileset>
+	    </copy>
+		<copy todir="${demo-build.home}/demo_bin/libs">
+	        <fileset dir="${demo_sdk.dir}/libs">
+	            <include name="android-support-v4.jar"/>
+	        </fileset>
+	    </copy>
+		<copy todir="${demo-build.home}/demo_bin/assets">
+	        <fileset dir="${demo_sdk.dir}/output/assets">
+	            <include name="**/*.*"/>
+	        </fileset>
+	    </copy>
+	</target>
+		
+	<!-- Invoke the proper target depending on whether or not
+         an assets directory is present. -->
+	<!-- TODO: find a nicer way to include the "-A ${asset-dir}" argument
+         only when the assets dir exists. -->
+	<target name="package-res">
+		<available file="${demo_asset.dir}" type="dir"
+                property="res-target" value="and-assets" />
+		<property name="res-target" value="no-assets" />
+		<antcall target="package-res-${res-target}" />
+	</target>
+	
+		<!-- Put the project's resources into the output package file. -->
+	<target name="package-res-and-assets">
+		<echo>++++++++++ : Packaging resources and assets... ${demo-build.home}/demo_bin ..${res.dir}..${demo_asset.dir}</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-S" />
+			<arg value="${res.dir}" />
+			<arg value="-S" />
+			<arg value="${demo-build.home}/demo_bin/res" />
+			<arg value="-f" />
+			<arg value="-M" />
+			<arg value="${demo_manifest}" />
+			<arg value="-A" />
+			<arg value="${demo_asset.dir}" />
+			<arg value="-A" />
+			<arg value="${demo-build.home}/demo_bin/assets" />
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+			<arg value="--auto-add-overlay"/>
+		</exec>
+	</target>
+
+	<!-- Same as package-res-and-assets, but without "-A ${asset-dir}" -->
+	<target name="package-res-no-assets">
+		<echo>++++++++++ : Packaging resources...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-S" />
+			<arg value="${res.dir}" />
+			<arg value="-S" />
+			<arg value="${demo-build.home}/demo_bin" />
+			<arg value="-f" />
+			<arg value="-M" />
+			<arg value="${demo_manifest}" />
+			<!-- No assets directory -->
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+			<arg value="--auto-add-overlay"/>
+		</exec>
+	</target>
+	
+</project>

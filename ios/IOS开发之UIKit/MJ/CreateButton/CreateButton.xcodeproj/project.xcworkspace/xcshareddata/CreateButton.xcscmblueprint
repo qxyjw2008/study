@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A" : 0,
+    "68F40DC8C30DC97FF3AB5220DFBD33891052EA78" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2D3A4982-1924-4525-8879-E7D5E2B817B2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A" : "study\/",
+    "68F40DC8C30DC97FF3AB5220DFBD33891052EA78" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CreateButton",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/IOS开发之UIKit\/MJ\/CreateButton\/CreateButton.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benjaminwhx\/git.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "68F40DC8C30DC97FF3AB5220DFBD33891052EA78"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benjaminwhx\/study.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5AF46FAC1EA8F839A928B59D63B03D16C2DCB6A"
+    }
+  ]
+}

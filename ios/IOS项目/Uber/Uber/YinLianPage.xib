@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YinLianPage" customModule="Uber" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="roV-1R-tIr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品描述:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbB-Uw-yy0">
+                    <rect key="frame" x="38" y="62" width="73" height="35"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="l4m-9w-TQi"/>
+                        <constraint firstAttribute="width" constant="73" id="uuJ-6A-BF5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iBeans设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Reg-k1-O3M">
+                    <rect key="frame" x="137" y="62" width="145" height="35"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-fG-IaI">
+                    <rect key="frame" x="137" y="105" width="145" height="35"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品价格:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0T-fh-xhx">
+                    <rect key="frame" x="38" y="105" width="73" height="35"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i0-62-gyg">
+                    <rect key="frame" x="145" y="167" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="支付"/>
+                    <connections>
+                        <action selector="pay:" destination="-1" eventType="touchUpInside" id="JmW-AR-fzc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F0T-fh-xhx" firstAttribute="leading" secondItem="pbB-Uw-yy0" secondAttribute="leading" id="1jM-pI-ZJ6"/>
+                <constraint firstItem="Reg-k1-O3M" firstAttribute="leading" secondItem="pbB-Uw-yy0" secondAttribute="trailing" constant="26" id="5le-hA-dml"/>
+                <constraint firstItem="5i0-62-gyg" firstAttribute="top" secondItem="M8k-fG-IaI" secondAttribute="bottom" constant="27" id="8EH-V6-byU"/>
+                <constraint firstItem="F0T-fh-xhx" firstAttribute="height" secondItem="pbB-Uw-yy0" secondAttribute="height" id="AQ4-lO-PHc"/>
+                <constraint firstItem="F0T-fh-xhx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="EX8-g0-Pd3"/>
+                <constraint firstAttribute="trailing" secondItem="Reg-k1-O3M" secondAttribute="trailing" constant="38" id="Qs0-Xp-vcq"/>
+                <constraint firstItem="M8k-fG-IaI" firstAttribute="height" secondItem="Reg-k1-O3M" secondAttribute="height" id="SuB-wV-n9g"/>
+                <constraint firstItem="Reg-k1-O3M" firstAttribute="top" secondItem="pbB-Uw-yy0" secondAttribute="top" id="cei-D0-a7i"/>
+                <constraint firstItem="M8k-fG-IaI" firstAttribute="top" secondItem="F0T-fh-xhx" secondAttribute="top" id="iw9-aw-wds"/>
+                <constraint firstItem="Reg-k1-O3M" firstAttribute="height" secondItem="pbB-Uw-yy0" secondAttribute="height" id="jWB-u5-DJI"/>
+                <constraint firstItem="pbB-Uw-yy0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="62" id="lGR-Ij-Eq5"/>
+                <constraint firstItem="5i0-62-gyg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oKY-me-RiP"/>
+                <constraint firstItem="pbB-Uw-yy0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="scM-vA-0IH"/>
+                <constraint firstItem="M8k-fG-IaI" firstAttribute="leading" secondItem="Reg-k1-O3M" secondAttribute="leading" id="v1y-Ru-AH7"/>
+                <constraint firstItem="M8k-fG-IaI" firstAttribute="width" secondItem="Reg-k1-O3M" secondAttribute="height" multiplier="29:7" id="xK2-fR-4O8"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

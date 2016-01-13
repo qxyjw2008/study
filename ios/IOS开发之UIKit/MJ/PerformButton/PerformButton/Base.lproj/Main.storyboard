@@ -21,14 +21,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcj-6i-hXT">
                                 <rect key="frame" x="255.5" y="254.5" width="90" height="90"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.47656008620000001" green="0.95686763740000003" blue="0.2810310888" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="EsH-rm-kJZ"/>
                                     <constraint firstAttribute="height" constant="90" id="snI-gG-HXQ"/>
                                 </constraints>
-                                <state key="normal" title="移动方块">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="点我啊" backgroundImage="宝宝">
+                                    <color key="titleColor" red="0.47656008620000001" green="0.95686763740000003" blue="0.2810310888" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="highlighted" title="摸我干啥" backgroundImage="小布丁"/>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHm-8d-uqb"/>
                                 </connections>
@@ -139,4 +139,8 @@
             <point key="canvasLocation" x="305" y="364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="宝宝" width="401" height="396"/>
+        <image name="小布丁" width="110" height="110"/>
+    </resources>
 </document>

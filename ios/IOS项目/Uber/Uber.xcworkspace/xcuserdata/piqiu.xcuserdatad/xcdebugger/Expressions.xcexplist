@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SelectCountryPage.(initDatas in _5CB680FFA7E8749421AEB5115C3D8267)() -&gt; ():SelectCountryPage.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "datas">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
